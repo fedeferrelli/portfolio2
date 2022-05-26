@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import ShowSectionName from '../../utils/ShowSectionName';
-import HomeMain from './HomeMain'
+import HomeMain from '../Skills/SkillsMain';
 
-function Home() {
+function Skills() {
 
     const [showMain, setShowMain] = useState(false)
 
@@ -23,7 +23,7 @@ useEffect(() => {
 
         :
 
-        <ShowSectionName name="Home"/>
+        <ShowSectionName name="Skills"/>
 
         }
 
@@ -34,4 +34,4 @@ useEffect(() => {
     )
 }
 
-export default Home
+export default Skills

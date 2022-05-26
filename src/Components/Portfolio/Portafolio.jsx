@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import ShowSectionName from '../../utils/ShowSectionName';
-import HomeMain from './HomeMain'
+import PortafolioMain from './PortafolioMain';
 
-function Home() {
+function Portafolio() {
 
     const [showMain, setShowMain] = useState(false)
 
@@ -19,11 +19,11 @@ useEffect(() => {
 
         { showMain ? 
 
-        <HomeMain/>
+        <PortafolioMain/>
 
         :
 
-        <ShowSectionName name="Home"/>
+        <ShowSectionName name="Portafolio"/>
 
         }
 
@@ -34,4 +34,4 @@ useEffect(() => {
     )
 }
 
-export default Home
+export default Portafolio
