@@ -3,10 +3,10 @@ import {Fade} from 'react-awesome-reveal'
 
 function AboutMain() {
     return (
-        <main >
+        <main className="h-screen flex flex-col justify-between ">
             <Fade duration="1000" triggerOnce >
             <section className="bg-alternative p-4 rounded-lg">
-<div className="w-full  text-secondary text-[100px] sm:leading-tight leading-[5rem] tracking-tight font-bold  hover:text-terciary duration-500 font-sans">
+<div className="w-full  text-secondary text-center text-3xl sm:leading-tight leading-[5rem] tracking-tight font-bold  hover:text-terciary duration-500 font-sans">
     ABOUT {/* <span className="block text-secondary text-3xl tracking-wider font-normal mt-2 sm:mt-0"> Front End Developer <span className="italic block text-terciary">&</span> Economista </span>  */}
 </div>
 
