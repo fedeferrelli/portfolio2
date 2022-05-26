@@ -10,7 +10,7 @@ useEffect(() => {
         
         setTimeout(() => {
             setShowMain(true)
-          }, 1500);
+          }, 2000);
         
     }, [])
 

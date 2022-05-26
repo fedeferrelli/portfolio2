@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
+import {Fade} from 'react-awesome-reveal'
 
 function HomeMain() {
     return (
         <main >
+            {/* <Fade duration="1000" triggerOnce className="w-full bg-green-400" > */}
             <section className="bg-alternative p-4 rounded-lg">
 <div className="w-full  text-secondary text-[100px] sm:leading-tight leading-[5rem] tracking-tight font-bold  hover:text-terciary duration-500 font-sans">
     Fede Mazza {/* <span className="block text-secondary text-3xl tracking-wider font-normal mt-2 sm:mt-0"> Front End Developer <span className="italic block text-terciary">&</span> Economista </span>  */}
@@ -40,7 +42,7 @@ function HomeMain() {
             
             
             
-            
+           {/*  </Fade> */}
             
         </main>
     )

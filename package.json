@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "react": "^18.0.0",
+    "react-awesome-reveal": "^3.8.1",
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
