@@ -12,7 +12,7 @@ const navs = [{nav:"home", linkTo: "/"},
 {nav:"portafolio", linkTo: "/portafolio"},
 {nav:"contacto", linkTo: "/contacto"}]
 
-const stack = [{tecnologia: "html5", src: 'src/assets/img/stack/html.svg'},
+const stack = [{tecnologia: "html5", src: 'https://portafolio-liart-two.vercel.app/src/assets/img/stack/html.svg'},
 {tecnologia: "css3", src: 'src/assets/img/stack/css3.svg'},
 {tecnologia: "javascript", src: 'src/assets/img/stack/javascript.svg'},
 {tecnologia: "react", src: 'src/assets/img/stack/react.svg'},
@@ -22,7 +22,7 @@ const stack = [{tecnologia: "html5", src: 'src/assets/img/stack/html.svg'},
 {tecnologia: "tailwind", src: 'src/assets/img/stack/tailwindcss2.svg'},
 {tecnologia: "png", src: 'src/assets/img/stack/github.png'},
 {tecnologia: "fireabse", src: 'src/assets/img/stack/firebase.svg'},
-{tecnologia: "png", src: 'src/assets/img/stack/html.png'}]
+{tecnologia: "png", src: 'https://portafolio-liart-two.vercel.app/src/assets/img/stack/html.png'}]
 
     return (
       <Fade duration="1000" triggerOnce className="w-full pb-10">
