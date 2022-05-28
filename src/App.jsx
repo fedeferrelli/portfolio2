@@ -10,8 +10,8 @@ function App() {
 
   return (
 
-    <main className="bg-primary min-h-screen w-full flex px-1">
-      <section className="max-w-[1200px] m-auto flex ">
+    <main className="bg-primary min-h-screen flex px-1">
+      <section className="max-w-[1200px] m-auto flex w-full">
       <Router>
       <Routes>
     <Route path='/' exact element={<Home/>} /> 

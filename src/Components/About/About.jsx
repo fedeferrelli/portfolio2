@@ -23,7 +23,7 @@ useEffect(() => {
 
         :
 
-        <ShowSectionName name="About"/>
+        <ShowSectionName name="Acerca de Mí"/>
 
         }
 
