@@ -40,7 +40,7 @@ console.log(stack[0].src)
       <Fade duration="1000" triggerOnce className="w-full pb-16">
         <main className="flex flex-col min-h-screen  w-full">
           <section className="bg-alternative p-4 flex  flex-col w-full">
-            <h1 className="w-full  text-secondary text-4xl sm:leading-tight leading-[5rem] tracking-tight font-bold  hover:text-terciary duration-500 font-sans sm:text-center scroll-smooth">
+            <h1 className="w-full  text-secondary text-4xl sm:leading-tight leading-[5rem] tracking-tight font-bold  font-sans text-center">
               Acerca de Mí
             </h1>
 
@@ -63,7 +63,7 @@ console.log(stack[0].src)
                 </p>
 
                 <div className="flex mt-5">
-                  <a href={Curriculum_esp} download className="m-auto w-full">
+                  <a href={Curriculum_esp} download className="m-auto w-full sm:w-1/2">
                     <button className="bg-terciary rounded-lg w-full font-bold hover:bg-terciary/70 duration-500 text-lg uppercase py-3 px-6 text-primary">
                       {" "}
                       Descargar CV{" "}
