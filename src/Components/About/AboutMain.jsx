@@ -37,14 +37,14 @@ const stack = [{tecnologia: "html5", src: html},
 console.log(stack[0].src)
 
     return (
-      <Fade duration="1000" triggerOnce className="w-full pb-10">
+      <Fade duration="1000" triggerOnce className="w-full pb-16">
         <main className="flex flex-col min-h-screen  w-full">
           <section className="bg-alternative p-4 flex  flex-col w-full">
             <h1 className="w-full  text-secondary text-4xl sm:leading-tight leading-[5rem] tracking-tight font-bold  hover:text-terciary duration-500 font-sans sm:text-center scroll-smooth">
               Acerca de Mí
             </h1>
 
-            <div className="flex sm:mt-20  flex-col sm:flex-row justify-center items-center w-full gap-20">
+            <div className="flex sm:mt-20  flex-col sm:flex-row justify-center items-center w-full sm:gap-20 gap-8 ">
               <div className="sm:w-1/2 flex flex-col  text-secondary text-lg sm:text-center sm:leading-lose  tracking-wider font-sans font-light m-auto gap-4">
                 <p>
                   Soy un apasionado por el desarrollo Front End que disfruto de
@@ -74,7 +74,7 @@ console.log(stack[0].src)
 
               <div className="sm:w-1/2 m-auto   text-secondary text-lg sm:text-center sm:leading-tight leading-[5rem] tracking-tight font-sans font-light">
               
-                <h2 className="mb-8  text-secondary text-xl  text-center sm:leading-lose  tracking-wider font-sans font-bold  m-auto ">Tecnologías que utilizo</h2>
+                <h2 className="mb-2 sm:mb-6  text-secondary text-xl  text-center sm:leading-lose  tracking-wider font-sans font-bold  m-auto ">Tecnologías que utilizo</h2>
 
                 <div className="flex flex-wrap w-full">
 
@@ -82,7 +82,7 @@ console.log(stack[0].src)
                    
                     <div
                       key={tech.src}
-                      className=" m-auto p-2 rounded-lg flex flex-col justify-between w-1/2 sm:w-1/3 sm:h-30"
+                      className=" m-auto p-2 rounded-lg flex flex-col justify-between w-1/3 sm:w-1/3 sm:h-30"
                     >
                       
                      <img
