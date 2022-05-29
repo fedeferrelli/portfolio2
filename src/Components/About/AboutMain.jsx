@@ -3,26 +3,29 @@ import {Fade} from 'react-awesome-reveal';
 import NavSections from '../../utils/NavSections';
 import {Link} from 'react-router-dom';
 import Curriculum_esp from '../../assets/cvs/CV_Fede_Mazza_FED_esp.pdf';
-import Image from '../../assets/img/stack/css3.svg'
+
+import Image from './stack/html.svg'
 
 
 function AboutMain() {
+
 
 const navs = [{nav:"home", linkTo: "/"},
 {nav:"portafolio", linkTo: "/portafolio"},
 {nav:"contacto", linkTo: "/contacto"}]
 
-const stack = [{tecnologia: "html5", src: 'https://portafolio-liart-two.vercel.app/src/assets/img/stack/html.svg'},
-{tecnologia: "css3", src: 'src/assets/img/stack/css3.svg'},
-{tecnologia: "javascript", src: 'src/assets/img/stack/javascript.svg'},
-{tecnologia: "react", src: 'src/assets/img/stack/react.svg'},
-{tecnologia: "react native", src: 'src/assets/img/stack/react_native.svg'},
-{tecnologia: "git", src: 'src/assets/img/stack/git.svg'},
-{tecnologia: "github", src: 'src/assets/img/stack/github.svg'},
-{tecnologia: "tailwind", src: 'src/assets/img/stack/tailwindcss2.svg'},
-{tecnologia: "png", src: 'src/assets/img/stack/github.png'},
-{tecnologia: "fireabse", src: 'src/assets/img/stack/firebase.svg'},
-{tecnologia: "png", src: 'https://portafolio-liart-two.vercel.app/src/assets/img/stack/html.png'}]
+const stack = [{tecnologia: "html5", src: `src='./stack/html.svg'`},
+/* {tecnologia: "css3", src: '../../assets/img/stack/css3.svg'},
+{tecnologia: "javascript", src: '../../assets/img/stack/javascript.svg'},
+{tecnologia: "react", src: '../../assets/img/stack/react.svg'},
+{tecnologia: "react native", src: '../../assets/img/stack/react_native.svg'},
+{tecnologia: "git", src: '../../assets/img/stack/git.svg'},
+{tecnologia: "github", src: '../../assets/img/stack/github.svg'},
+{tecnologia: "tailwind", src: '../../assets/img/stack/tailwindcss2.svg'},
+{tecnologia: "fireabse", src: '../../assets/img/stack/firebase.svg'}, */
+]
+
+console.log(stack[0].src)
 
     return (
       <Fade duration="1000" triggerOnce className="w-full pb-10">
@@ -61,26 +64,35 @@ const stack = [{tecnologia: "html5", src: 'https://portafolio-liart-two.vercel.a
               </div>
 
               <div className="sm:w-1/2 m-auto   text-secondary text-lg sm:text-center sm:leading-tight leading-[5rem] tracking-tight font-sans font-light">
-                
+              <img
+                        src='src/Components/About/stack/ffff.jpg'
+                        alt='ffff'
+                       className="w-30 sm:w-16 m-auto " 
+                      />
                 <h2 className="mb-8  text-secondary text-xl  text-center sm:leading-lose  tracking-wider font-sans font-bold  m-auto ">Tecnologías que utilizo</h2>
 
                 <div className="flex flex-wrap w-full">
+
                   {stack.map((tech) => (
+                    /* console.log(tech.src); */
                     <div
                       key={tech.src}
                       className=" m-auto p-2 rounded-lg flex flex-col justify-between w-1/2 sm:w-1/3 sm:h-30"
                     >
-                      <img
-                        src={tech.src}
+                      {tech.src}
+                     {/*  <img
+                        src='../stack/ffff.jpg'
                         alt={tech.tecnologia}
-                        className="w-16 sm:w-16 m-auto "
-                      />
+                         className="w-16 sm:w-16 m-auto " 
+                      /> */}
                       <h3 className="uppercase m-auto text-sm">
                         {" "}
                         {tech.tecnologia}
                       </h3>
                     </div>
                   ))}
+
+
                 </div>
               </div>
             </div>

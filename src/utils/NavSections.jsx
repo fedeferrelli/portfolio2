@@ -6,7 +6,7 @@ function NavSections(navs) {
   const navigator = navs.navs;
 
   return (
-    <section className="flex flex-row mt-2 sm:w-[500px] ml-auto mr-auto fixed z-20 right-0 left-0  bottom-0 sm:bottom-2 border border-terciary/50 sm:rounded-md overflow-hidden sm:shadow-md shadow-slate-800 bg-primary">
+    <section className="flex flex-row h-12 sm:w-[500px] ml-auto mr-auto fixed z-20 right-0 left-0  bottom-0 sm:bottom-2 border border-terciary/50 sm:rounded-md overflow-hidden sm:shadow-md shadow-slate-800 bg-primary">
       <Fade direction="down" className="w-full ">
         <div className="flex text-secondary w-full h-full sm:bg-secondary/5">
           {navigator.map((nav) => (
