@@ -6,6 +6,14 @@ import Curriculum_esp from '../../assets/cvs/CV_Fede_Mazza_FED_esp.pdf';
 
 import html from './stack/html.svg'
 import css from './stack/css3.svg'
+import javascript from './stack/javascript.svg'
+import react from './stack/react.svg'
+import react_native from './stack/react_native.svg'
+import git from './stack/git.svg'
+import github from './stack/github.svg'
+import firebase from './stack/firebase.svg'
+import tailwind from './stack/tailwindcss2.svg'
+
 
 
 function AboutMain() {
@@ -17,13 +25,13 @@ const navs = [{nav:"home", linkTo: "/"},
 
 const stack = [{tecnologia: "html5", src: html},
 {tecnologia: "css3", src: css},
-/* {tecnologia: "javascript", src: '../../assets/img/stack/javascript.svg'},
-{tecnologia: "react", src: '../../assets/img/stack/react.svg'},
-{tecnologia: "react native", src: '../../assets/img/stack/react_native.svg'},
-{tecnologia: "git", src: '../../assets/img/stack/git.svg'},
-{tecnologia: "github", src: '../../assets/img/stack/github.svg'},
-{tecnologia: "tailwind", src: '../../assets/img/stack/tailwindcss2.svg'},
-{tecnologia: "fireabse", src: '../../assets/img/stack/firebase.svg'}, */
+{tecnologia: "javascript", src: javascript},
+{tecnologia: "react", src: react},
+{tecnologia: "react native", src: react_native},
+{tecnologia: "git", src: git},
+{tecnologia: "github", src: github},
+{tecnologia: "tailwind", src: tailwind},
+{tecnologia: "fireabse", src: firebase},
 ]
 
 console.log(stack[0].src)
@@ -82,7 +90,7 @@ console.log(stack[0].src)
                         alt={tech.tecnologia}
                          className="w-16 sm:w-16 m-auto " 
                       />
-                      <h3 className="uppercase m-auto text-sm">
+                      <h3 className="lowercase m-auto text-sm">
                         {" "}
                         {tech.tecnologia}
                       </h3>
