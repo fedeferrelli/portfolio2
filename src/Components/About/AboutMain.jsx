@@ -4,7 +4,8 @@ import NavSections from '../../utils/NavSections';
 import {Link} from 'react-router-dom';
 import Curriculum_esp from '../../assets/cvs/CV_Fede_Mazza_FED_esp.pdf';
 
-import Image from './stack/html.svg'
+import html from './stack/html.svg'
+import css from './stack/css3.svg'
 
 
 function AboutMain() {
@@ -14,9 +15,9 @@ const navs = [{nav:"home", linkTo: "/"},
 {nav:"portafolio", linkTo: "/portafolio"},
 {nav:"contacto", linkTo: "/contacto"}]
 
-const stack = [{tecnologia: "html5", src: `src='./stack/html.svg'`},
-/* {tecnologia: "css3", src: '../../assets/img/stack/css3.svg'},
-{tecnologia: "javascript", src: '../../assets/img/stack/javascript.svg'},
+const stack = [{tecnologia: "html5", src: html},
+{tecnologia: "css3", src: css},
+/* {tecnologia: "javascript", src: '../../assets/img/stack/javascript.svg'},
 {tecnologia: "react", src: '../../assets/img/stack/react.svg'},
 {tecnologia: "react native", src: '../../assets/img/stack/react_native.svg'},
 {tecnologia: "git", src: '../../assets/img/stack/git.svg'},
@@ -64,27 +65,23 @@ console.log(stack[0].src)
               </div>
 
               <div className="sm:w-1/2 m-auto   text-secondary text-lg sm:text-center sm:leading-tight leading-[5rem] tracking-tight font-sans font-light">
-              <img
-                        src='./stack/ffff.jpg'
-                        alt='ffff'
-                       className="w-30 sm:w-16 m-auto " 
-                      />
+              
                 <h2 className="mb-8  text-secondary text-xl  text-center sm:leading-lose  tracking-wider font-sans font-bold  m-auto ">Tecnologías que utilizo</h2>
 
                 <div className="flex flex-wrap w-full">
 
                   {stack.map((tech) => (
-                    /* console.log(tech.src); */
+                   
                     <div
                       key={tech.src}
                       className=" m-auto p-2 rounded-lg flex flex-col justify-between w-1/2 sm:w-1/3 sm:h-30"
                     >
-                      {tech.src}
-                     {/*  <img
-                        src='../stack/ffff.jpg'
+                      
+                     <img
+                         src={tech.src}
                         alt={tech.tecnologia}
                          className="w-16 sm:w-16 m-auto " 
-                      /> */}
+                      />
                       <h3 className="uppercase m-auto text-sm">
                         {" "}
                         {tech.tecnologia}
