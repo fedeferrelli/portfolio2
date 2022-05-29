@@ -65,7 +65,7 @@ console.log(stack[0].src)
 
               <div className="sm:w-1/2 m-auto   text-secondary text-lg sm:text-center sm:leading-tight leading-[5rem] tracking-tight font-sans font-light">
               <img
-                        src='../stack/ffff.jpg'
+                        src='./stack/ffff.jpg'
                         alt='ffff'
                        className="w-30 sm:w-16 m-auto " 
                       />
