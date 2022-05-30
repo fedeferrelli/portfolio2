@@ -34,8 +34,6 @@ const stack = [{tecnologia: "html5", src: html},
 {tecnologia: "fireabse", src: firebase},
 ]
 
-console.log(stack[0].src)
-
     return (
       <Fade duration="1000" triggerOnce className="w-full pb-16">
         <main className="flex flex-col min-h-screen  w-full">

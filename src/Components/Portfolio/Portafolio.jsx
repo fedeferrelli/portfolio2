@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import ShowSectionName from '../../utils/ShowSectionName';
 import PortafolioMain from './PortafolioMain';
 
+
 function Portafolio() {
 
     const [showMain, setShowMain] = useState(false)
@@ -10,7 +11,7 @@ useEffect(() => {
         
         setTimeout(() => {
             setShowMain(true)
-          }, 2000);
+          }, 1000);
         
     }, [])
 
