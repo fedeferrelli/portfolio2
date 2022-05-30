@@ -8,6 +8,8 @@ import miJardin from '../assets/img/images_projects/miJardin.jpg'
 import portfolio from '../assets/img/images_projects/portfolio.jpg'
 
 
+import react from '../Components/About/stack/react.svg'
+
 
 
 const projects = [
@@ -21,7 +23,7 @@ const projects = [
     code: "https://github.com/fedeferrelli/clac",
     image: calculator,
     stack: [
-      "React",
+      'react',
       "react-dom",
       "react-fade-in",
       "react-router-dom",
