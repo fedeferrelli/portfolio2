@@ -1,4 +1,5 @@
 import calculator from '../assets/img/images_projects/calculator.jpg'
+import cuotifica from '../assets/img/images_projects/cuotifica.jpg'
 import toDoList from '../assets/img/images_projects/toDoList.jpg'
 import menu_consumer from '../assets/img/images_projects/menu_consumer.jpg'
 import menu_client from '../assets/img/images_projects/menu_client.jpg'
@@ -28,6 +29,25 @@ const projects = [
       "react-fade-in",
       "react-router-dom",
       "react-scroll",
+      "taildwind",
+      "vite"
+    ],
+  },
+
+  {
+    name: "Cuotificador",
+    description_esp:
+      "¿Pagar en efectivo o cuotificar? Esta app te ayuda a calcular que es lo que más te conviene.",
+    description_eng:
+    "",
+    link: "https://cuotificador-fedeferrelli.vercel.app/",
+    code: "https://github.com/fedeferrelli/cuotificador",
+    image: cuotifica,
+    stack: [
+      'react',
+      "react-dom",
+      "react-fade-in",
+      "react-router-dom",
       "taildwind",
       "vite"
     ],

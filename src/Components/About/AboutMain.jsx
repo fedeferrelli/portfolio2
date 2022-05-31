@@ -102,6 +102,10 @@ const stack = [{tecnologia: "html5", src: html},
           </section>
 
           <NavSections navs={navs} />
+
+          <button type='button' className="uppercase text-center w-full flex  px-6 bg-red-400 outline-none h-full">
+                f
+              </button>
         </main>
       </Fade>
     );

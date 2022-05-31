@@ -26,43 +26,19 @@ const [index, setIndex] = useState(1)
               Portafolio
             </h1>
 
-            <p className="w-full my-8  m-auto max-w-prose text-secondary text-xl sm:leading-tight    font-sans text-center">
-              Estos son alguno de los proyectos que he desarrollado de manera independiente
+            <p className="w-full my-8  m-auto max-w-prose text-secondary text-xl sm:leading-tight    font-sans text-center font-thin">
+              Estos son alguno de los proyectos que he desarrollado de manera
+              independiente
             </p>
 
-            <div className="flex sm:mt-20  flex-col sm:flex-row justify-center items-center w-full sm:gap-20 gap-8 ">
-             
-
-              <div className="m-auto   text-secondary text-lg sm:text-center sm:leading-tight leading-[5rem] tracking-tight font-sans font-light">
-              
-
-         
-
-                  {projects.map((project, index) => (
-                   
-/*                     <div
-                      key={project.name}
-                      className=" m-auto p-2 rounded-lg flex flex-col justify-between w-1/3 sm:w-1/3 sm:h-30"
-                    >
-                      
-                     <img
-                         src={`${project.image}`}
-                        alt={project.image}
-                         className="w-16 sm:w-16 m-auto " 
-                      />
-                      <h3 className="lowercase m-auto text-sm">
-                        {" "}
-                        {project.name}
-                      </h3>
-                    </div> */
-<div key={project.image}>
-<ShowProject project={project} index={index} />
-</div>
-                  ))} 
-
-
-                </div>
-              
+            <div className="flex sm:mt-0  flex-col sm:flex-row justify-center items-center w-full sm:gap-20 gap-8 ">
+              <div>
+                {projects.map((project, index) => (
+                  <div key={project.image}>
+                    <ShowProject project={project} index={index} />
+                  </div>
+                ))}
+              </div>
             </div>
           </section>
 
