@@ -19,7 +19,7 @@ function ShowProject({ project, index, language='esp' }) {
   const [showDescription, setShowDescription] = useState(false)
    
   return (
-    <div className="m-auto sm:w-10/12 w-full mb-6 rounded-xs shadow-sm shadow-gray-400 bg-secondary/20 sm:bg-secondary/10">
+    <div className="m-auto sm:w-10/12 w-full mb-10 rounded-xs shadow-sm shadow-gray-400 bg-secondary/20 sm:bg-secondary/10">
       <Fade
 
        
