@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import ShowSectionName from '../../utils/ShowSectionName';
-import ContactMain from '../Contact/ContactMain';
+import ShowSectionName from './ShowSectionName';
+import ContactMain from '../Components/Contact/ContactMain';
 
 function Contact() {
 
