@@ -19,7 +19,7 @@ function ShowProject({ project, index, language='esp' }) {
   const [showDescription, setShowDescription] = useState(false)
    
   return (
-    <div className="m-auto sm:w-10/12 w-full mb-6 rounded-xs shadow-sm shadow-gray-400 bg-secondary/5">
+    <div className="m-auto sm:w-10/12 w-full mb-6 rounded-xs shadow-sm shadow-gray-400 bg-secondary/20 sm:bg-secondary/10">
       <Fade
 
        
@@ -52,7 +52,7 @@ function ShowProject({ project, index, language='esp' }) {
                 className="w-full object-fill"
               />
             :
-            <div className="w-full flex flex-col justify-evenly items-center py-2 h-[420px] m-auto ">
+            <div className="w-full flex flex-col justify-evenly items-center py-2 min-h-[420px] m-auto ">
 
 
             <p className=" px-4 py-2 font-mono sm:px-8 text-center flex text-secondary max-w-prose">
