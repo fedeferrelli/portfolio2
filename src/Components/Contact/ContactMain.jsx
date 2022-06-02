@@ -2,6 +2,11 @@ import React, {useState} from 'react';
 import {Fade} from 'react-awesome-reveal';
 import NavSections from '../../utils/NavSections';
 
+import twitter from './contactIcons/twitter.svg';
+import linkedin from './contactIcons/linkedin.svg';
+import email from './contactIcons/email.svg';
+import github from '../../Components/About/stack/github.svg'
+
 
 import ContactForm from './ContactForm';
 
@@ -20,12 +25,25 @@ return (
               Contacto
             </h1>
 
-            <p className="w-full my-8  m-auto max-w-prose text-secondary text-xl sm:leading-tight    font-sans text-center font-thin">
+            <p className="w-full mb-8 sm:my-8  m-auto max-w-prose text-secondary text-xl sm:leading-tight    font-sans text-center font-thin">
               Si queres podés enviarme un mensaje o contactarme por cualquiera de mis redes sociales. Todos los mensajes son bienvenidos y me esforzaré al máximo para poder corresponderlos.
             </p>
             </section>
 
             <section className="flex flex-col  justify-center items-center">
+
+            <div className="flex flex-row justify-evenly items-center w-full max-w-[450px] py-4">
+
+                <a href="https://www.linkedin.com/in/fede-mazza-75ab00231/" target="blank" rel="noreferrer"><img src={linkedin} alt="linkedin"/></a>
+
+                <a href="https://github.com/fedeferrelli" target="blank" rel="noreferrer"><img src={github} alt="github" className="w-12"/></a>
+
+                
+                <a href="https://twitter.com/Fe__Dev__" target="blank" rel="noreferrer"><img src={twitter} alt="twitter"/></a>
+
+                <a href="mailto:ferrelli.mazza@gmail.com" target="blank" rel="noreferrer"><img src={email} alt="email"/></a>
+                
+            </div>    
 
             <ContactForm/>
 
