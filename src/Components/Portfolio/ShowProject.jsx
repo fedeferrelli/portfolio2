@@ -40,23 +40,26 @@ function ShowProject({ project, index, language='esp' }) {
 
           <section className="flex flex-col sm:flex-row ">
 
-          <div className="w-full h-[420px] sm:max-h-[350px] overflow-hidden">
+          <div className="w-full  sm:max-h-[350px] overflow-hidden">
 
             <div className="w-full p-2 sm:max-h-[320px] rounded-lg overflow-hidden">
             
       { !showDescription ?
-      
-      <img
+     <div className="flex  overflow-hidden">
+
+            <img
                 src={image}
                 alt={image}
-                className="w-full object-fill"
+                className="w-[350px] sm:w-[450px] h-[160px] sm:h-[206px] m-auto"
               />
+      
+        </div>      
             :
-            <div className="w-full flex flex-col justify-evenly items-center py-2 min-h-[420px] m-auto ">
+            <div className="w-full  flex flex-col justify-evenly items-center py-2 min-h-[420px] m-auto ">
 
 
             <p className=" px-4 py-2 font-mono sm:px-8 text-center flex text-secondary max-w-prose">
-                           {language === "esp" ? description_esp : description_eng}
+                           {description_esp}
                          </p>
            
            
@@ -78,11 +81,11 @@ function ShowProject({ project, index, language='esp' }) {
             
           </div>
 
-          <div className="w-full flex flex-col justify-between items-center py-2 sm:max-h-[320px]">
+          <div className="w-full flex flex-col justify-evenly items-center py-2 ">
 
 
  <p className=" px-4 py-2 font-mono sm:px-8 text-center hidden sm:flex text-secondary">
-                {language === "esp" ? description_esp : description_eng}
+                {description_esp}
               </p>
 
 
@@ -100,7 +103,7 @@ function ShowProject({ project, index, language='esp' }) {
                 ))}
               </div>
 
-
+{/* 
               <div className="w-full px-4 py-2 sm:py-0 flex flex-col gap-2 sm:gap-4 sm:flex-row justify-evenly  items-center">
 
             <a
@@ -126,9 +129,36 @@ function ShowProject({ project, index, language='esp' }) {
             </a>
 
 
-            </div>
+            </div> */}
           </div>          
           </section>
+          
+          <div className="w-full px-4 py-2 sm:py-10 flex flex-col gap-2 sm:gap-4 sm:flex-row justify-evenly  items-center">
+
+<a
+  href={link ? link : apk}
+  rel="noreferrer"
+  target="_blank"
+  className="sm:bg-terciary overflow-hidden  rounded-lg text-terciary sm:text-primary font-sans
+sm:hover:terciary/50 border border-terciary ease-in-out duration-300 w-full sm:w-1/3"
+>
+  {" "}
+ <button className="uppercase text-center sm:px-6 py-2 w-full "> {link ? "site" : "apk"}</button>
+</a>
+
+<a
+  href={code}
+  rel="noreferrer"
+  target="_blank"
+  className="sm:bg-terciary overflow-hidden  rounded-lg text-terciary sm:text-primary font-sans
+sm:hover:terciary/50 border border-terciary ease-in-out duration-300 w-full sm:w-1/3"
+>
+  {" "}
+ <button className="uppercase text-center sm:px-6 py-2 w-full ">Code</button>
+</a>
+
+
+</div>
         </div>
         </div>
       </Fade>

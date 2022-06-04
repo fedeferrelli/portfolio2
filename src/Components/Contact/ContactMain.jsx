@@ -25,7 +25,7 @@ return (
               Contacto
             </h1>
 
-            <p className="w-full mb-8 sm:my-8  m-auto max-w-prose text-secondary text-xl sm:leading-tight    font-sans text-center font-thin">
+            <p className="w-full mb-8 sm:my-8  m-auto max-w-prose text-secondary text-xl sm:leading-tight    font-sans sm:text-center font-thin">
               Si queres podés enviarme un mensaje o contactarme por cualquiera de mis redes sociales. Todos los mensajes son bienvenidos y me esforzaré al máximo para poder corresponderlos.
             </p>
             </section>

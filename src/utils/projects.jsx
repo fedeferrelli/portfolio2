@@ -1,11 +1,11 @@
-import calculator from '../assets/img/images_projects/calculator.jpg'
-import cuotifica from '../assets/img/images_projects/cuotifica.jpg'
-import toDoList from '../assets/img/images_projects/toDoList.jpg'
+import calculator from '../assets/img/images_projects/calculator_screen.jpg'
+import cuotifica from '../assets/img/images_projects/cuotifica_screen.jpg'
+import toDoList from '../assets/img/images_projects/toDoList_screen.jpg'
 import menu_consumer from '../assets/img/images_projects/menu_consumer.jpg'
 import menu_client from '../assets/img/images_projects/menu_client.jpg'
 import criptoCotizador from '../assets/img/images_projects/criptoCotizador.jpg'
 import weatherApp from '../assets/img/images_projects/weatherApp.jpg'
-import miJardin from '../assets/img/images_projects/miJardin.jpg'
+import miJardin from '../assets/img/images_projects/miJardin_screen.jpg'
 import portfolio from '../assets/img/images_projects/portfolio.jpg'
 
 
