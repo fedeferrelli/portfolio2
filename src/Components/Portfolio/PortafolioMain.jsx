@@ -7,7 +7,6 @@ import ShowProject from './ShowProject';
 
 
 
-
 function PortafolioMain() {
 
 
@@ -15,8 +14,11 @@ const navs = [{nav:"home", linkTo: "/"},
 {nav:"about", linkTo: "/about"},
 {nav:"contacto", linkTo: "/contacto"}]
 
-const [index, setIndex] = useState(1)
 
+
+const [index, setIndex] = useState(1);
+const [numberOfProjects, setNumberOfProjects] = useState(5)
+const [showMoreProjects, setShowMoreProjects] = useState(false)
 
     return (
       <Fade duration="1000" triggerOnce className="w-full pb-16">
@@ -26,19 +28,40 @@ const [index, setIndex] = useState(1)
               Portafolio
             </h1>
 
-            <p className="w-full my-8  m-auto max-w-prose text-secondary text-xl sm:leading-tight    font-sans text-center font-thin">
-              Estos son alguno de los proyectos que he desarrollado de manera
+            <p className="w-full sm:my-8 mb-8  m-auto max-w-prose text-secondary text-xl sm:leading-tight    font-sans text-center font-thin">
+              Estos son algunos de los proyectos que he desarrollado de manera
               independiente
             </p>
 
             <div className="flex sm:mt-0  flex-col sm:flex-row justify-center items-center w-full sm:gap-20 gap-8 ">
               <div>
-                {projects.map((project, index) => (
+                {projects.slice(0,numberOfProjects).map((project, index) => (
                   <div key={project.image}>
                     <ShowProject project={project} index={index} />
                   </div>
                 ))}
+
+                {showMoreProjects &&
+
+                <Fade>{
+
+projects.slice(numberOfProjects+1).map((project, index) => (
+                  <div key={project.image}>
+                    <ShowProject project={project} index={index+numberOfProjects} />
+                  </div>
+                ))
+              }</Fade>
+              }
+
+<div className="w-full flex">
+ <button className="text-terciary/50 font-sans sm:hover:terciary/50 ease-in-out duration-300 w-full sm:w-auto px-4 py-1 m-auto uppercase" onClick={()=>setShowMoreProjects(!showMoreProjects)}>{showMoreProjects ? "ver menos proyectos" : "ver más proyectos"}</button> 
+</div>
+
+
+
+
               </div>
+              
             </div>
           </section>
 

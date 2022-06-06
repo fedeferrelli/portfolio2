@@ -3,6 +3,8 @@ import React, {useState} from "react";
 import { Fade } from "react-awesome-reveal";
 
 
+
+
 function ShowProject({ project, index, language='esp' }) {
   const {
     name,
@@ -68,6 +70,7 @@ function ShowProject({ project, index, language='esp' }) {
       
         </div>      
             :
+            <Fade>
             <div className="w-full  flex flex-col justify-evenly items-center py-2 gap-4 m-auto">
 
 
@@ -88,7 +91,7 @@ function ShowProject({ project, index, language='esp' }) {
                                {item}
                              </div>
                            ))}
-                         </div> </div> }
+                         </div> </div></Fade> }
               
             </div>
             
