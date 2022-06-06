@@ -34,6 +34,9 @@ const stack = [{tecnologia: "html5", src: html},
 {tecnologia: "fireabse", src: firebase},
 ]
 
+const otherSkills = ["inglés B1 → B2", "Soft Skills", "team player" , "focused" , "finance" , "monetary theory", "Experiencia trabajando bajo presión", "Diplomatura en Business Intelligence", "Italian Cheff", "Rock and roll guitar player"]
+
+
     return (
       <Fade duration="1000" triggerOnce className="w-full pb-16">
         <main className="flex flex-col min-h-screen  w-full">
@@ -99,6 +102,26 @@ const stack = [{tecnologia: "html5", src: html},
                 </div>
               </div>
             </div>
+
+            <h1 className="mt-8 w-full text-secondary text-2xl sm:leading-tight leading-[5rem] tracking-tight  font-sans text-center">
+              Además
+            </h1>
+
+            <div className="m-auto flex flex-wrap w-full sm:w-1/2 gap-4 sm:flex-row wrap justify-evenly sm:mt-6 sm:text-xs mb-8">
+            {otherSkills.map((otherSkill)=>(
+              <div key={otherSkill} className="w-auto text-secondary font-light border border-terciary/20 sm:hover:bg-terciary duration-500 sm:hover:-translate-y-1 sm:hover:text-primary rounded-full px-3 sm:px-6 py-2 text-center lowercase"> {otherSkill}</div>
+
+
+            ))}
+            </div>
+
+           
+
+
+            
+
+
+
           </section>
 
           <NavSections navs={navs} />
