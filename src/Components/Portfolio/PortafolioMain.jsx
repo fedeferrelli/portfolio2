@@ -7,6 +7,7 @@ import ShowProject from './ShowProject';
 
 
 
+
 function PortafolioMain() {
 
 
@@ -19,6 +20,7 @@ const navs = [{nav:"home", linkTo: "/"},
 const [index, setIndex] = useState(1);
 const [numberOfProjects, setNumberOfProjects] = useState(5)
 const [showMoreProjects, setShowMoreProjects] = useState(false)
+
 
     return (
       <Fade duration="1000" triggerOnce className="w-full pb-16">
@@ -33,11 +35,15 @@ const [showMoreProjects, setShowMoreProjects] = useState(false)
               independiente
             </p>
 
+
+
             <div className="flex sm:mt-0  flex-col sm:flex-row justify-center items-center w-full sm:gap-20 gap-8 ">
               <div>
                 {projects.slice(0,numberOfProjects).map((project, index) => (
-                  <div key={project.image}>
+                  <div key={project.image} onClick={()=>setShowImage(true)}>
+                   
                     <ShowProject project={project} index={index} />
+                  
                   </div>
                 ))}
 
@@ -45,7 +51,7 @@ const [showMoreProjects, setShowMoreProjects] = useState(false)
 
                 <Fade>{
 
-projects.slice(numberOfProjects+1).map((project, index) => (
+projects.slice(numberOfProjects).map((project, index) => (
                   <div key={project.image}>
                     <ShowProject project={project} index={index+numberOfProjects} />
                   </div>
@@ -53,7 +59,7 @@ projects.slice(numberOfProjects+1).map((project, index) => (
               }</Fade>
               }
 
-<div className="w-full flex">
+<div className="w-full flex -mt-5">
  <button className="text-terciary/50 font-sans sm:hover:terciary/50 ease-in-out duration-300 w-full sm:w-auto px-4 py-1 m-auto uppercase" onClick={()=>setShowMoreProjects(!showMoreProjects)}>{showMoreProjects ? "ver menos proyectos" : "ver más proyectos"}</button> 
 </div>
 

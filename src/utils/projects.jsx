@@ -185,8 +185,8 @@ const projects = [
       "¿Por qué no agregar está mismísima página que estás mirando? Como podés ver, aquí constan mis datos personales, una breve muestra de lo que hago y formas de contactarse conmigo.",
     description_eng:
       "Why not to include the web page you are looking at? As you can see, here are personal information, the kind of things that I like to do and many ways to get in touch with me.",
-    link: "https://portfolio-fedeferrelli.vercel.app/",
-    code: "https://github.com/fedeferrelli/portfolio",
+    link: "https://portafolio-fedeferrelli.vercel.app/",
+    code: "https://github.com/fedeferrelli/portfolio2",
     image: portfolio,
     stack: [
       "React",

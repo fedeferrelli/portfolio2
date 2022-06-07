@@ -9,9 +9,9 @@ function HomeMain() {
       <main className="flex flex-col justify-center min-h-screen w-full">
        
           <section className="bg-alternative p-4 rounded-lg -mt-10">
-            <div className="w-full  text-secondary text-[100px] sm:leading-tight leading-[5rem] tracking-tight font-bold  hover:text-terciary duration-500 font-sans sm:text-center">
+            <div className="w-full  text-secondary text-[100px] sm:leading-tight leading-[5rem] tracking-tight font-bold  font-sans sm:text-center">
               Fede Mazza{" "}
-              {/* <span className="block text-secondary text-3xl tracking-wider font-normal mt-2 sm:mt-0"> Front End Developer <span className="italic block text-terciary">&</span> Economista </span>  */}
+
             </div>
 
             <div className="w-full  text-secondary text-xl sm:text-3xl sm:text-center  sm:leading-tight leading-[5rem] tracking-tight font-sans font-light -mt-3">

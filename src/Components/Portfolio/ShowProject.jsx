@@ -3,8 +3,6 @@ import React, {useState} from "react";
 import { Fade } from "react-awesome-reveal";
 
 
-
-
 function ShowProject({ project, index, language='esp' }) {
   const {
     name,
@@ -19,6 +17,8 @@ function ShowProject({ project, index, language='esp' }) {
   const reindex = index + 1;
 
   const [showDescription, setShowDescription] = useState(false)
+
+  
    
   return (
     <div className="m-auto sm:w-10/12 w-full sm:max-w-[850px] mb-10 rounded-xs shadow-sm shadow-gray-400 bg-secondary/20 sm:bg-secondary/10">
@@ -29,6 +29,7 @@ function ShowProject({ project, index, language='esp' }) {
         triggerOnce
         className="flex flex-col justify-center m-auto " 
       >
+
 
         <div >
         <div className=" sm:w-full bg-secondary/5  m-auto rounded border border-secondary/20 drop-shadow-[0_0px_15px_rgba(0,0,0,0.5)] h-full">
@@ -60,12 +61,12 @@ function ShowProject({ project, index, language='esp' }) {
             <div className="w-full m-auto p-2 sm:max-h-[320px] rounded-lg overflow-hidden">
             
       { !showDescription ?
-     <div className="flex  overflow-hidden">
+     <div className="flex  overflow-hidden" onClick={()=>setShowImage(true)}>
 
             <img
                 src={image}
                 alt={image}
-                className="w-[400px] m-auto"
+                className="w-[400px] rounded-lg m-auto "
               />
       
         </div>      
@@ -142,6 +143,7 @@ sm:hover:terciary/50 border border-terciary ease-in-out duration-300 w-full sm:w
               
         </div>
         </div>
+        
       </Fade>
       
     </div>
