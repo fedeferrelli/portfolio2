@@ -34,7 +34,7 @@ const stack = [{tecnologia: "html5", src: html},
 {tecnologia: "fireabse", src: firebase},
 ]
 
-const otherSkills = ["inglés B1 → B2", "Soft Skills", "team player" , "focused" , "finance" , "monetary theory", "Experiencia trabajando bajo presión", "Diplomatura en Business Intelligence", "Italian Cheff", "Rock and roll guitar player"]
+const otherSkills = ["inglés B1 → B2", "Soft Skills", "maestría en economía" ,"team player" , "experiencia docente",  "focused" , "finanzas corporativas" , "monetary theory", "Experiencia trabajando bajo presión", "Diplomatura en Business Intelligence", "Italian Cheff", "Rock and roll guitar player"]
 
 
     return (
@@ -65,7 +65,7 @@ const otherSkills = ["inglés B1 → B2", "Soft Skills", "team player" , "focuse
 
                 <div className="flex mt-5">
                   <a href={Curriculum_esp} download className="m-auto w-full sm:w-1/2">
-                    <button className="bg-terciary rounded-lg w-full font-bold hover:bg-terciary/70 duration-500 text-lg uppercase py-3 px-6 text-primary">
+                    <button className="bg-terciary rounded-full w-full font-bold hover:bg-terciary/70 duration-500 text-lg uppercase py-2 px-6 text-primary">
                       {" "}
                       Descargar CV{" "}
                     </button>

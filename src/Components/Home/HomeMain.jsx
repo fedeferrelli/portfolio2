@@ -26,21 +26,21 @@ function HomeMain() {
           <section className="mt-2 w-full sm:w-[500px] ml-auto mr-auto">
             <Link to="/portafolio">
               {" "}
-              <button className="bg-terciary rounded-lg w-full font-bold hover:bg-terciary/70 duration-500 text-2xl uppercase py-3 px-6 text-primary">
+              <button className="bg-terciary rounded-full w-full font-bold hover:bg-terciary/70 duration-500 text-2xl uppercase py-2 text-primary">
                 {" "}
                 Portafolio{" "}
               </button>
             </Link>
 
             <div className="flex gap-2 mt-2 text-secondary">
-              <Link to="contacto" className="w-1/2 border border-terciary rounded-lg overflow-hidden">
+              <Link to="contacto" className="w-1/2 border border-terciary rounded-full overflow-hidden">
                 <button className="font-light py-2 text-lg uppercase w-full h-full hover:bg-terciary hover:text-primary hover:font-bold duration-500">
                   {" "}
                   Contacto{" "}
                 </button>
               </Link>
 
-              <Link to="about" className="w-1/2 border border-terciary rounded-lg overflow-hidden">
+              <Link to="about" className="w-1/2 border border-terciary rounded-full overflow-hidden">
                 <button className="font-light py-2 text-lg uppercase w-full h-full hover:bg-terciary hover:text-primary hover:font-bold duration-500">
                   {" "}
                   Quien soy{" "}

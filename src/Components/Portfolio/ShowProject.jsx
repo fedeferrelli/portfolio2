@@ -21,7 +21,7 @@ function ShowProject({ project, index, language='esp' }) {
   const [showDescription, setShowDescription] = useState(false)
    
   return (
-    <div className="m-auto sm:w-10/12 w-full mb-10 rounded-xs shadow-sm shadow-gray-400 bg-secondary/20 sm:bg-secondary/10">
+    <div className="m-auto sm:w-10/12 w-full sm:max-w-[850px] mb-10 rounded-xs shadow-sm shadow-gray-400 bg-secondary/20 sm:bg-secondary/10">
       <Fade
 
        
@@ -55,9 +55,9 @@ function ShowProject({ project, index, language='esp' }) {
 
           <section className="flex flex-col sm:flex-row ">
 
-          <div className="w-full  sm:max-h-[350px] overflow-hidden">
+          <div className="w-full flex  sm:max-h-[350px] overflow-hidden">
 
-            <div className="w-full p-2 sm:max-h-[320px] rounded-lg overflow-hidden">
+            <div className="w-full m-auto p-2 sm:max-h-[320px] rounded-lg overflow-hidden">
             
       { !showDescription ?
      <div className="flex  overflow-hidden">
@@ -65,7 +65,7 @@ function ShowProject({ project, index, language='esp' }) {
             <img
                 src={image}
                 alt={image}
-                className="w-[450px] h-[206px] m-auto"
+                className="w-[400px] m-auto"
               />
       
         </div>      
@@ -111,7 +111,7 @@ function ShowProject({ project, index, language='esp' }) {
   href={link ? link : apk}
   rel="noreferrer"
   target="_blank"
-  className="sm:bg-terciary overflow-hidden  rounded-lg text-terciary sm:text-primary font-sans
+  className="sm:bg-terciary overflow-hidden  rounded-full text-terciary sm:text-primary font-sans
 sm:hover:terciary/50 border border-terciary ease-in-out duration-300 w-full sm:w-1/2"
 >
   {" "}
@@ -122,7 +122,7 @@ sm:hover:terciary/50 border border-terciary ease-in-out duration-300 w-full sm:w
   href={code}
   rel="noreferrer"
   target="_blank"
-  className="sm:bg-terciary overflow-hidden  rounded-lg text-terciary sm:text-primary font-sans
+  className="sm:bg-terciary overflow-hidden  rounded-full text-terciary sm:text-primary font-sans
 sm:hover:terciary/50 border border-terciary ease-in-out duration-300 w-full sm:w-1/2"
 >
   {" "}
