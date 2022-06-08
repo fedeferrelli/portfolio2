@@ -135,7 +135,7 @@ function ContactForm() {
         <input
           type="submit"
           value="enviar mensaje"
-          className="bg-terciary w-full py-3 uppercase rounded-lg mt-8 text-primary font-bold text-lg font-sans 
+          className="bg-terciary w-full py-2 uppercase rounded-full mt-8 text-primary font-bold text-lg font-sans 
          sm:hover:bg-terciary/90  ease-in-out duration-300"
         ></input>
       </form>
