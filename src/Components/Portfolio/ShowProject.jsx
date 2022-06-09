@@ -45,24 +45,24 @@ function ShowProject({ project, index}) {
               ))}
             </div>
             <div
-              className=" sm:hidden w-40 m-auto text-center text-terciary/50 rounded-full px-2 py-1 mb-2 border border-terciary"
+              className=" sm:hidden w-40 m-auto text-center text-terciary/50 rounded-full px-2 py-1 my-2 mb-2 border border-terciary"
               onClick={() => setShowDescription(!showDescription)}
             >
               {!showDescription ? "ver descripción" : "ver imagen"}
             </div>
 
-            <section className="flex flex-col sm:flex-row ">
+            <section className="flex flex-col sm:flex-row">
               <div className="w-full flex  sm:max-h-[350px] overflow-hidden">
-                <div className="w-full m-auto p-2 sm:max-h-[320px] rounded-lg overflow-hidden">
+                <div className="w-full m-auto sm:max-h-[320px] overflow-hidden">
                   {!showDescription ? (
                     <div
-                      className="flex  overflow-hidden"
+                      className="flex px-4  overflow-hidden"
                       onClick={() => setShowImage(true)}
                     >
                       <img
                         src={image}
                         alt={image}
-                        className="w-[400px] rounded-lg m-auto "
+                        className="rounded-lg m-auto "
                       />
                     </div>
                   ) : (
