@@ -9,9 +9,6 @@ import miJardin from '../assets/img/images_projects/miJardin_screen.jpg'
 import portfolio from '../assets/img/images_projects/portfolio_screen.jpg'
 
 
-import react from '../Components/About/stack/react.svg'
-
-
 
 const projects = [
   {
