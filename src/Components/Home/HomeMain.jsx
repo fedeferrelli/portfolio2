@@ -5,8 +5,11 @@ import { Link } from "react-router-dom";
 function HomeMain() {
   return (
     <Fade duration="1000" triggerOnce className="w-full ">
-      <main className="flex flex-col justify-center min-h-screen w-full">
-        <section className="bg-alternative p-4 rounded-lg -mt-10">
+      <main className="flex flex-col justify-between min-h-screen w-full relative">
+      
+      <div className="flex flex-col justify-center items-center m-auto">
+          <section className="bg-alternative p-4 m-auto">
+
           <div className="w-full  text-secondary text-[100px] sm:leading-tight leading-[5rem] tracking-tight font-bold  font-sans sm:text-center">
             Fede Mazza{" "}
           </div>
@@ -20,7 +23,7 @@ function HomeMain() {
           </div>
         </section>
 
-        <section className="mt-2 w-full sm:w-[500px] ml-auto mr-auto">
+        <section className="m-auto w-full sm:w-[500px] ">
           <Link to="/portafolio">
             {" "}
             <button className="bg-terciary rounded-full w-full font-bold hover:bg-terciary/70 duration-500 text-2xl uppercase py-2 text-primary">
@@ -51,7 +54,12 @@ function HomeMain() {
             </Link>
           </div>
         </section>
+        </div>
+       { <div className="mb-5 sm:mb-2 text-center w-full">
+         <a className="text-gray-400 hover:text-white duration-700 ease-in-out text-center uppercase underline font-thin cursor-pointer m-auto px-1" href="https://www.notion.so/Fede-Mazza-Mi-Blog-c6e5b7264ffd45a496802d100ca164bb" target="_blank"> blog </a>
+         </div>}
       </main>
+     
     </Fade>
   );
 }

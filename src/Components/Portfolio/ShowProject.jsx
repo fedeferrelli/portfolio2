@@ -53,22 +53,21 @@ function ShowProject({ project, index}) {
 
             <section className="flex flex-col sm:flex-row">
               <div className="w-full flex  sm:max-h-[350px] overflow-hidden">
-                <div className="w-full m-auto sm:max-h-[320px] overflow-hidden">
+                <div className="w-full sm:px-3 m-auto sm:max-h-[320px] overflow-hidden">
                   {!showDescription ? (
                     <div
-                      className="flex px-4  overflow-hidden"
-                      onClick={() => setShowImage(true)}
-                    >
+                      className="flex overflow-hidden"
+                      >
                       <img
                         src={image}
                         alt={image}
-                        className="rounded-lg m-auto "
+                        className="my-3 m-auto "
                       />
                     </div>
                   ) : (
                     <Fade>
                       <div className="w-full  flex flex-col justify-evenly items-center py-2 gap-4 m-auto">
-                        <p className=" px-4 py-1 font-mono sm:px-8 text-center flex text-secondary max-w-prose">
+                        <p className=" px-4 py-1 sm:px-8 text-left flex text-secondary max-w-prose">
                           {description_esp}
                         </p>
                         <div className="flex flex-wrap justify-center h-auto item-center w-full">
@@ -90,8 +89,8 @@ function ShowProject({ project, index}) {
                 </div>
               </div>
 
-              <div className="w-full flex flex-col justify-evenly items-center py-0 ">
-                <div className="px-4 py-2 font-mono sm:px-8 text-center hidden sm:flex justify-center items-center text-secondary">
+              <div className="w-full flex flex-col justify-evenly items-center py-0">
+                <div className="px-4 py-2 sm:px-4 text-left max-w-prose font-thin hidden sm:flex justify-center items-center text-secondary">
                   <p className="">{description_esp}</p>
                 </div>
 

@@ -19,6 +19,7 @@ function App() {
             <Route path="/skills" exact element={<Skills />} />
           </Routes>
         </Router>
+        
       </section>
     </main>
   );

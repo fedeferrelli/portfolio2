@@ -12,7 +12,7 @@ function PortafolioMain() {
   ];
 
   const [index, setIndex] = useState(1);
-  const [numberOfProjects, setNumberOfProjects] = useState(5);
+  const [numberOfProjects, setNumberOfProjects] = useState(4);
   const [showMoreProjects, setShowMoreProjects] = useState(false);
 
   return (
@@ -23,7 +23,7 @@ function PortafolioMain() {
             Portafolio
           </h1>
 
-          <p className="w-full sm:my-8 mb-8  m-auto max-w-prose text-secondary text-xl sm:leading-tight    font-sans text-center font-thin">
+          <p className="w-full sm:my-8 mb-8  m-auto max-w-prose text-secondary text-xl sm:leading-tight font-sans sm:text-center font-thin">
             Estos son algunos de los proyectos que he desarrollado de manera
             independiente
           </p>
@@ -31,7 +31,7 @@ function PortafolioMain() {
           <div className="flex sm:mt-0  flex-col sm:flex-row justify-center items-center w-full sm:gap-20 gap-8 ">
             <div>
               {projects.slice(0, numberOfProjects).map((project, index) => (
-                <div key={project.image} onClick={() => setShowImage(true)}>
+                <div key={project.image} >
                   <ShowProject project={project} index={index} />
                 </div>
               ))}
