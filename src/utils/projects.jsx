@@ -6,6 +6,7 @@ import menu_client from '../assets/img/images_projects/menu_client_screen.jpg'
 import criptoCotizador from '../assets/img/images_projects/criptoCotizador_screen.jpg'
 import weatherApp from '../assets/img/images_projects/weatherApp_screen.jpg'
 import miJardin from '../assets/img/images_projects/miJardin_screen.jpg'
+import nancy from '../assets/img/images_projects/nancy_screen.jpg'
 import portfolio from '../assets/img/images_projects/portfolio_screen.jpg'
 
 
@@ -153,6 +154,26 @@ const projects = [
       "reanimated",
       "axios",
       "expo",
+    ],
+  },
+
+  {
+    name: "Nancy Cendra. English Teacher",
+    description_esp:
+      "Diseño para un negocio unipersonal de profesora de inglés.",
+    description_eng:
+      "",
+    link: "https://nancy-cyan.vercel.app/",
+    code: "https://github.com/fedeferrelli/nancy",
+    image: nancy,
+    stack: [
+      "React",
+      "tailwind",
+      "react-dom",
+      "react-awesome-reveal",
+      "react-icons",
+      "react-router-dom",
+      "react-scroll",
     ],
   },
 

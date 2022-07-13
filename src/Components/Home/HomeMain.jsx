@@ -54,10 +54,13 @@ function HomeMain() {
             </Link>
           </div>
         </section>
+        <div className="mt-12 sm:mb-2 text-center w-full sm:hidden">
+         <a className="text-gray-400 text-center uppercase underline-offset-4 underline font-thin m-auto px-1" href="https://www.notion.so/Fede-Mazza-Mi-Blog-c6e5b7264ffd45a496802d100ca164bb" target="_blank"> blog </a>
+         </div>
         </div>
-       { <div className="mb-5 sm:mb-2 text-center w-full">
-         <a className="text-gray-400 hover:text-white duration-700 ease-in-out text-center uppercase underline font-thin cursor-pointer m-auto px-1" href="https://www.notion.so/Fede-Mazza-Mi-Blog-c6e5b7264ffd45a496802d100ca164bb" target="_blank"> blog </a>
-         </div>}
+       <div className="mb-5 sm:mb-2 text-center w-full hidden sm:flex">
+         <a className="text-gray-400 hover:text-white duration-700 ease-in-out text-center uppercase underline underline-offset-4 font-thin cursor-pointer m-auto px-1" href="https://www.notion.so/Fede-Mazza-Mi-Blog-c6e5b7264ffd45a496802d100ca164bb" target="_blank"> blog </a>
+         </div>
       </main>
      
     </Fade>
