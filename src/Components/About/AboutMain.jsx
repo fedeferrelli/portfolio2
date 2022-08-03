@@ -118,7 +118,7 @@ function AboutMain() {
 
           <div className="m-auto flex flex-wrap w-full sm:w-1/2 gap-4 sm:flex-row wrap justify-evenly sm:mt-6 sm:text-xs mb-8">
           <a className="cursor-pointer w-auto text-secondary font-light border border-terciary/20 sm:hover:bg-terciary duration-500 sm:hover:-translate-y-1 sm:hover:text-primary rounded-full px-3 sm:px-6 py-2 text-center lowercase"
-            href='https://drive.google.com/drive/u/0/search?q=pearson' target='_blank'  >
+            href='https://drive.google.com/file/d/1NPQEYZkkiY0Xb6vm62yf5rP6ZXDV8cwF/view?usp=sharing' target='_blank'  >
                 {" "}
                 Inglés: B2
               </a>
