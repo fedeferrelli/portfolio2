@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import NavSections from "../../utils/NavSections";
 
 
-import ValoresVersusDiferencias from "./publicaciones/ValoresVsReferencias";
 
 function BlogMain() {
   const navs = [
@@ -13,7 +12,7 @@ function BlogMain() {
     { nav: "contacto", linkTo: "/contacto" },
   ];
 
-  const publicaciones = [{name: 'Valores versus Referencias en Javascript', link: '/valores_versus_referencias'}, {name: 'Chequeo de Tipos Dinámico y Tipado Débil en Javascript', link: '/valores_versus_referencias'}]
+  const publicaciones = [{name: 'Valores versus Referencias en Javascript', link: '/valores_versus_referencias'}, {name: 'Chequeo de Tipos Dinámico y Tipado Débil en Javascript', link: '/tipado_dinamico_debil'}]
 
   return (
     <Fade duration="1000" triggerOnce className="w-full pb-16">

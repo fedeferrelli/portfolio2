@@ -8,6 +8,7 @@ import Blog from "./Components/Blog/Blog";
 
 
 import ValoresVersusDiferencias from "./Components/Blog/publicaciones/ValoresVsReferencias";
+import TipadoDinamicoDebil from './Components/Blog/publicaciones/TipadoDinamicoDebil'
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
             <Route path="/skills" exact element={<Skills />} />
 
             <Route path="/blog" exact element={<Blog/>} />
-            <Route path="/valores_versus_referencias" exact element={<ValoresVersusDiferencias />} />
+            <Route path="/valores_versus_referencias" exact element={<ValoresVersusDiferencias/>} />
+            <Route path="/tipado_dinamico_debil" exact element={<TipadoDinamicoDebil/>} />
 
           </Routes>
         </Router>
