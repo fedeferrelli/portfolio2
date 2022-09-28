@@ -12,7 +12,7 @@ function PortafolioMain() {
   ];
 
   const [index, setIndex] = useState(1);
-  const [numberOfProjects, setNumberOfProjects] = useState(4);
+  const [numberOfProjects, setNumberOfProjects] = useState(10);
   const [showMoreProjects, setShowMoreProjects] = useState(false);
 
   return (

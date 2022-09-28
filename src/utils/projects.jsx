@@ -9,10 +9,33 @@ import miJardin from '../assets/img/images_projects/miJardin_screen.jpg'
 import nancy from '../assets/img/images_projects/nancy_screen.jpg'
 import portfolio from '../assets/img/images_projects/portfolio_screen.jpg'
 
+import cripto_screen from '../assets/img/images_projects/cripto_screen.jpg'
+import jsejercicios_screen from '../assets/img/images_projects/jsejercicios_screen.jpg'
+
 
 
 const projects = [
   {
+    name: "Cripto Manager",
+    description_esp:
+      "Con esta app se puede listar, agregar a favoritos y armar un portafolio de criptomonedas. Dentro del portafolio se puede tener un histórico de cada operación.",
+    description_eng:
+    "",
+    link: "https://cripto-fedeferrelli.vercel.app/",
+    code: "https://github.com/fedeferrelli/cripto",
+    image: cripto_screen,
+    stack: [
+      'react',
+      "react-dom",
+      "firebase",
+      "react-fade-in",
+      "react-router-dom",
+      "react-scroll",
+      "taildwind",
+      "vite"
+    ],
+  },
+{
     name: "Financial Calculator",
     description_esp:
       "Con esta app podés calcular las variables de una operación de crédito típica: la tasa de interés, el monto a financiar, la cuota a pagar y los periodos de la operación.",
@@ -48,6 +71,27 @@ const projects = [
       "react-router-dom",
       "taildwind",
       "vite"
+    ],
+  },
+
+
+  {
+    name: "Nancy Cendra. English Teacher",
+    description_esp:
+      "Diseño para un negocio unipersonal de profesora de inglés.",
+    description_eng:
+      "",
+    link: "https://nancy-cyan.vercel.app/",
+    code: "https://github.com/fedeferrelli/nancy",
+    image: nancy,
+    stack: [
+      "React",
+      "tailwind",
+      "react-dom",
+      "react-awesome-reveal",
+      "react-icons",
+      "react-router-dom",
+      "react-scroll",
     ],
   },
 
@@ -158,22 +202,21 @@ const projects = [
   },
 
   {
-    name: "Nancy Cendra. English Teacher",
+    name: "Algoritmos",
     description_esp:
-      "Diseño para un negocio unipersonal de profesora de inglés.",
+      "Ejercicios típicos de algoritmia básica e intermedia. Me pàreció buena idea juntarlos en un proyecto y darle estilo y UI",
     description_eng:
-      "",
-    link: "https://nancy-cyan.vercel.app/",
-    code: "https://github.com/fedeferrelli/nancy",
-    image: nancy,
+    "",
+    link: "https://jsexercises-fedeferrelli.vercel.app/",
+    code: "https://github.com/fedeferrelli/jsexercises",
+    image: jsejercicios_screen,
     stack: [
-      "React",
-      "tailwind",
+      'react',
       "react-dom",
-      "react-awesome-reveal",
-      "react-icons",
+      "react-fade-in",
       "react-router-dom",
-      "react-scroll",
+      "taildwind",
+      "vite"
     ],
   },
 

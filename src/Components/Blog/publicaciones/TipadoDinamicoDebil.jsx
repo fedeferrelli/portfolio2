@@ -66,7 +66,7 @@ function TipadoDinamicoDebil() {
             </p>
 
             <p className="mt-2 max-w-prose">
-            Algunos consideran que Javascript es posee un tipado demasiado débil. Esto sumado al chequeo de datos dinámico implica que Javascript es un lenguaje dinámico débilmente tipado.
+            Algunos consideran que Javascript posee un tipado demasiado débil. Esto sumado al chequeo de datos dinámico implica que Javascript es un lenguaje dinámico débilmente tipado.
               
             </p>
 
